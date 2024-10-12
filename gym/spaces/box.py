@@ -27,7 +27,7 @@ def _short_repr(arr: np.ndarray) -> str:
 
 def is_float_integer(var) -> bool:
     """Checks if a variable is an integer or float."""
-    return np.issubdtype(type(var), np.integer) or np.issubdtype(type(var), np.floating)
+    return np.issubdtype(type(var), np.number)
 
 
 class Box(Space[np.ndarray]):
